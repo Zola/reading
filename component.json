@@ -1,0 +1,23 @@
+{
+  "name": "reading",
+  "repo": "yuehu/reading",
+  "description": "Care about reading.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/event": "*",
+    "component/emitter": "*",
+    "yuehu/reading-progress": "*",
+    "yuehu/reading-time": "*",
+    "yuehu/pretty": "*",
+    "yuehu/space": "*",
+    "yuehu/on-stop": "*",
+    "yuehu/word-count": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
