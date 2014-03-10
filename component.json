@@ -11,7 +11,6 @@
     "yuehu/reading-time": "*",
     "yuehu/pretty": "*",
     "yuehu/space": "*",
-    "yuehu/on-stop": "*",
     "yuehu/word-count": "*"
   },
   "development": {},
