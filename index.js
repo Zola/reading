@@ -6,6 +6,13 @@ var timing = require('reading-time');
 var events = require('event');
 
 function Reading(el) {
+  if (el) {
+    this.setup(el);
+  }
+}
+require('emitter')(Reading.prototype);
+
+Reading.prototype.setup = function(el) {
   this.el = el;
 
   // format html
@@ -17,10 +24,8 @@ function Reading(el) {
   // word count
   this.count = wordCount(el.innerText || el.textContent);
   this.timing = timing(this.count);
-
   this.bind();
-}
-require('emitter')(Reading.prototype);
+};
 
 Reading.prototype.bind = function() {
   var me = this;
